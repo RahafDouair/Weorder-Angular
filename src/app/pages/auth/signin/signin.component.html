@@ -1,0 +1,43 @@
+<div class="section-signin py-5 ">
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+    <div class="content-login ">
+      <h3 class="py-4 text-login">
+        Log in
+      </h3>
+      <form   [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" formControlName="phone" aria-describedby="emailHelp" placeholder="phone Number">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+        </div>
+        <div class="form-group form-check">
+          <span class="d-flex justify-content-end">Forgot password?</span>
+        </div>
+        <button type="submit" class="btn btn-login" [disabled]="!loginForm.valid">Login</button>
+
+        <div class="text-account">
+      <p> Don't have an account? 
+        <a class="link-custom" [routerLink]="['/register']"> Sign up</a>
+        <!-- <a class="link-nav" [routerLink]="['/login']">Sign In / Sign up</a> -->
+      </p>
+         <span>Privacy Policy</span> <br>
+         <p class="py-3">or</p>
+         <button type="submit" class="btn  btn-login-custom"> <img src="/assets/facebook-with-circle.svg" class="px-3" alt=""> Login With Facebook</button>
+ <br>
+         <button type="submit" class="btn btn-login-custom mt-2 "><img src="/assets/Google__G__Logo.svg"  class="px-3" alt=""> Login with Google</button>
+
+
+        </div>
+      </form>
+    </div>
+    </div>
+    <div class="col-md-7">
+      <img src="/assets/Group 9928.svg"  class="girl-login" alt="">
+    </div>
+
+  </div>
+</div>
+</div>

@@ -1,0 +1,51 @@
+.section-signin{
+  padding:100px 0 0 0;
+  background-color: #fff !important;
+  min-height: 100vh;
+
+}
+.form-group{
+  padding: 10px 0;
+}
+.btn-login{
+  width: 50%;
+  background-color: var(--bg-primary-purple-color);
+  color: #fff;
+  padding: 10px;
+  transform: translate(47%, 20px);
+}
+.text-account{
+  margin:38px 0 0;
+  text-align: center;
+
+}
+.link-custom{
+  color: #393737;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-login-custom{
+  width: 50%;
+  padding: 10px;
+  /* transform: translate(47%, 50px); */
+  border:1px solid #000;
+}
+.btn-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-signin{
+  padding: 30px 0;
+}
+.text-login{
+  font-family: Poppins;
+
+}
+.girl-login{
+  transform: translate(11%, 109px);
+    width: 670px;
+}
+.content-login{
+  margin-top: 103px;
+
+}

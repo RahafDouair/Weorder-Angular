@@ -1,0 +1,26 @@
+.custom-bg {
+  background-color: var(--bg-grey-color-main) !important;
+}
+.custom-bg-card{
+  background-color: red;
+}
+.card-img-top{
+  width:100% !important;
+  height: 250px;
+}
+.card-group{
+/* position: absolute; */
+position: absolute;
+    top: 0;
+}
+.card-group{
+  width: 91%;
+}
+.custom-col {
+  padding: 10px;
+  margin-bottom: 20px; /* Margin between cards */
+}
+body{
+  background-color: var(--bg-primary-white-fair) !important;
+
+}

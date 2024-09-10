@@ -1,0 +1,118 @@
+<section class="section-arrival py-3">
+  <div class="container">
+    <div *ngIf="productsArrival"  class="sub-section">
+      <h3 class="header-section">New Arrivals</h3>
+      <button class="btn btn-section view-arrival">View All</button>
+    </div>
+    <div class="cards">
+      <div class="row">
+        <div
+          *ngFor="let item of productsArrival"
+          class="col-lg-3 col-md-3 col-sm-12 col-xs-12"
+        >
+          <div class="card arrival-card"*ngIf="!isLoading" >
+
+            <img
+              class="card-img-top"
+              [src]="item.img_url"
+              alt="Card image cap"
+            />
+            <div class="card-top">
+              <div class="card-group">
+                <div class="offer-section d-flex">
+                  <div class="offer">
+                    <img src="/assets/Icon feather-tag.svg" alt="" />
+                    <span>offer</span>
+                  </div>
+                  <div class="percent">
+                    <span>50%</span>
+                  </div>
+                </div>
+                <div class="fav">
+                  <img src="/assets/Icon feather-heart.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                {{ item.title }}
+              </p>
+              <div class="rating">
+                <img
+                  src="/assets/Icon feather-star.svg"
+                  class="mx-1"
+                  width="12px"
+                  alt=""
+                />
+                <img
+                  src="/assets/Icon feather-star.svg"
+                  class="mx-1"
+                  width="12px"
+                  alt=""
+                />
+                <img
+                  src="/assets/Icon feather-star.svg"
+                  class="mx-1"
+                  width="12px"
+                  alt=""
+                />
+                <img
+                  src="/assets/Icon feather-star.svg"
+                  class="mx-1"
+                  width="12px"
+                  alt=""
+                />
+                <img
+                  src="/assets/Icon feather-star.svg"
+                  class="mx-1"
+                  width="12px"
+                  alt=""
+                />
+              </div>
+              <div class="type d-flex">
+                <div class="price">
+                  <span class="span-new price-new">{{ item.price }}</span>
+                  <span class="span-old price-old"
+                    ><s>{{ item.discount_price }}</s></span
+                  >
+                </div>
+                <div class="tag-icon">
+                  <!-- <a href="" [routerLink]="['/products']"> view</a> -->
+                  <!-- <a class="movie-item" [routerLink]="'/products/' + item.prd_id"> view
+</a> -->
+
+                  <img
+                    class="arrow-right"
+                    src="/assets/corner-down-right.svg"
+                    alt=""
+                  />
+                  <div class="circle">
+                    <a [routerLink]="'/products/' + item.prd_id">
+                      <img src="/assets/corner.svg" alt="Circular Image" />
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="btn btn-dark" (click)="addToCart(item)">Add to Cart</button> -->
+
+            </div>
+          </div>
+          <div class="card  arrival-card" *ngIf="isLoading">
+            <ngx-skeleton-loader
+            [theme]="{
+              'height.px': 240,
+            }"
+            />
+            <ngx-skeleton-loader   count="3"
+            [theme]="{
+              'height.px': 10,
+            }"
+            />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

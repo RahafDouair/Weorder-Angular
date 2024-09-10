@@ -1,0 +1,6 @@
+.newarrival-card{
+  background-color: var(--bg-grey-fair);
+}
+.newarrival-card:hover{
+  background-color: #fff;
+}

@@ -1,0 +1,4 @@
+.custom-header{
+  background: linear-gradient(to right, #FfFfff 50%, #592D83 50%);
+  /* background: linear-gradient(to right, var(--background-color) 70%, var(--background-color-detalis) 30%); */
+}

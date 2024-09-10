@@ -1,0 +1,18 @@
+.card-top
+{
+position: absolute;
+}
+.card-img-top{
+  width:100% !important;
+  height: 250px;
+}
+.card-group{
+  width: 91%;
+}
+.custom-col {
+  padding: 10px;
+}
+body{
+  background-color: var(--bg-primary-white-fair);
+
+}

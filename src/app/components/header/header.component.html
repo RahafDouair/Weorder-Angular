@@ -1,0 +1,68 @@
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+   <div class="container">
+    <a class="navbar-brand"[routerLink]="['/']">
+      <img src="/assets/logo.png" alt="logo" height="46" />
+
+    </a>
+    <button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse"
+     data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <div class="category-search text-center">
+      <div class="input-group  w-100">
+        <button class="btn  dropdown-toggle category-select" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+           <a class="link-nav" [routerLink]="['/categories']">Category</a>
+        </button>
+        <input type="text" class="form-control search" placeholder="Search for somethings" aria-label="Username" aria-describedby="basic-addon1">
+
+         </div>
+         <img src="/assets/search.svg" alt="" class="search-icon" />
+     </div>
+
+     <span style="margin-left: 35px;">
+      <div class="icons-login d-flex">
+        <div class="cart-icon">
+          <a [routerLink]="['/cart']">
+            <img src="/assets/shopping.svg" class="mx-3 mt-2" alt="">
+            <span class="badge  badge-primary"><span> {{ cartLength }}</span></span>
+
+          </a>
+        <!-- HTML Template -->
+<!-- <div class="dropdown" #dropdown>
+  <a class=" dropdown-toggle dropdown-toggle-custom" (click)="toggleDropdown()" aria-haspopup="true" [attr.aria-expanded]="isDropdownOpen ? 'true' : 'false'">
+    <img src="/assets/shopping.svg" class="mx-3 mt-2" alt="">
+
+  </a>
+  <div class="dropdown-menu" [class.show]="isDropdownOpen" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+    <a [routerLink]="['/cart']" class="dropdown-item" type="button">View Cart</a>
+
+  </div>
+</div> -->
+        </div>
+        <div class="user-icon">
+            <img src="/assets/Iconuser.svg" width="24" alt="">
+
+          </div>
+          <div class="btns-login">
+           <a class="link-nav" [routerLink]="['/login']">Sign In / Sign up</a>
+
+          </div>
+      </div>
+    </span>
+    </div>
+
+   </div>
+  </nav>
+
+</header>

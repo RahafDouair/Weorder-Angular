@@ -1,0 +1,41 @@
+
+<div class="smart-main">
+  <div class="section-smart container" *ngIf="!isLoading">
+
+<carousel>
+  <slide *ngFor="let item of sliders">
+   <div class="smart-content">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <h2 class="title-smart">{{item.title}}</h2>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="center-smart">
+          <p>
+          {{item.description}}
+          </p>
+          <div class="box-btn">
+            <button class="btn smart-btn">
+              <a class="nav-link"target="_blank" [href]="item.button_url">{{item.button_text}} </a>
+
+          </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <img [src]="item.image" class="img-ads" alt="" />
+      </div>
+    </div>
+   </div>
+  </slide>
+</carousel>
+  </div>
+  <div class="section-smart container" *ngIf="isLoading">
+    <ngx-skeleton-loader  
+    [theme]="{
+      'height.px': 350,
+      'background':'#afa4ff'
+    }"
+    />
+      </div>
+</div>

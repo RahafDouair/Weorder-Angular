@@ -1,0 +1,88 @@
+<div class="section-cart">
+  <div class="container">
+    <!-- <div *ngIf="cartItems && cartItems.length > 0">
+      <h2>Cart Items</h2>
+      <ul>
+        <li *ngFor="let item of cartItems">
+          {{ item.title }} - {{ item.price }}
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="header-cart">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Address</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Payment</a>
+        </li>
+      </ul>
+    </div>
+    <div class="cart-body">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="content-order"*ngIf="cartItems && cartItems.length > 0">
+            <div class="card mb-3" style="width: 100% !important" *ngFor="let item of cartItems" >
+              <div class="row g-0" >
+                <div class="col-md-3">
+                  <img
+                    [src]="item.image"
+                    class=" card-img-top"
+                    alt="..." width="200px"
+                  />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body d-flex ">
+                    <div class="section-first">
+                      <p class="card-text" >
+               {{item.name}}
+                      </p>
+                      <div class="card-content-frist d-block">
+                        <span *ngIf="item.color && item.color.length > 0">
+                          <small class="text-muted">Color</small>: {{ item.color[0]?.name }}
+                        </span>
+                        <span *ngIf="item.color && item.color.length > 0" class="variant">Variant ></span>
+                        <div class="card-text-content">
+
+                          <span *ngIf="item.size && item.size.length > 0">
+                            <small class="text-muted">Color</small>: {{ item.size[0]?.name }}
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="section-second">
+                        <span class="price-text">{{item.price}}$
+                        </span>
+                    </div>
+                    <div class="section-third d-flex mx-3">quantity <input type="number" class="mx-2" [value]="item.quantity"  min="1" max="999"></div>
+                  
+                   <a (click)="deleteItem(item.id)"  >
+                    <img class="delete"
+                    src="/assets/Group 9717.png"
+
+                     alt="">
+
+                   </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div *ngIf="cartItems.length === 0">
+            <p>Your cart is empty.</p>
+          </div>
+        </div>
+        <div class="col-md-4">payment</div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109.346" height="46.971" viewBox="0 0 109.346 46.971">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(0.05 -0.063)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(-0.05 0.063)">
+      <text id="OMART" transform="translate(31.346 37.138)" fill="#592d83" font-size="21" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">OMART</tspan></text>
+      <path id="Path_2262" data-name="Path 2262" d="M27.84,36.468l.072-6.8c.013-1.3-1.44-1.405-2.424-1.405H21.242a18.421,18.421,0,0,1-5.92-.647A9.741,9.741,0,0,1,9.026,17.1a9.842,9.842,0,0,1,4.39-6.367A9.8,9.8,0,0,1,20.99,9.658,8.7,8.7,0,0,1,27.8,17.5a1.326,1.326,0,0,0,1.322,1.208h6.71a1.325,1.325,0,0,0,1.318-1.476,19.777,19.777,0,0,0-6.82-12.9c-7.086-5.861-18.454-5.787-25.039.8C-3.09,13.511-1.45,29.5,9.1,35.348l.306.165c5.264,2.769,11.345,2.2,17.087,2.282a1.327,1.327,0,0,0,1.35-1.327Z" transform="translate(0.05 -0.063)" fill="#f3736d"/>
+      <circle id="Ellipse_807" data-name="Ellipse 807" cx="3.719" cy="3.719" r="3.719" transform="translate(20.786 39.534)" fill="#f3736d"/>
+      <circle id="Ellipse_808" data-name="Ellipse 808" cx="3.719" cy="3.719" r="3.719" transform="translate(10.144 39.534)" fill="#592d83"/>
+    </g>
+  </g>
+</svg>

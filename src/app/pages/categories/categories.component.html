@@ -1,0 +1,309 @@
+<div class="section-categories py-5">
+  <div class="res-nav mt-4">
+    <div class="container d-flex justify-content-between">
+      <div class="text-show">showing 45.3256 result</div>
+      <div class="text-show">Sort By:feature</div>
+    </div>
+  </div>
+  <div class="category-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="sidebar">
+            <div class="departments">
+              <h5>Departments</h5>
+              <ul class="categories-list">
+                <li
+                  *ngFor="let item of categories; let i = index"
+                  class="nav-item has-treeview"
+                  [ngClass]="{
+                    'menu-is-opening menu-open': selectedCategory === item.name
+                  }"
+                >
+                  <div class="test d-flex">
+                    <p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="icon-list"
+                      >
+                        <path
+                          d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                        />
+                      </svg>
+                      <!-- <svg
+                        *ngIf="selectedCategory !== item.name"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="custom-angle"
+                        viewBox="0 0 320 512"
+                      >
+                        <path
+                          d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                        />
+                      </svg> -->
+                    </p>
+
+                    <a
+                      href="#"
+                      class="nav-link align-items-center mx-2"
+                      (click)="toggleSubcategories($event, item.name)"
+                    >
+                      <span>{{ item.name }}</span>
+                    </a>
+                  </div>
+                  <ul
+                    class="nav nav-treeview"
+                    [ngStyle]="{
+                      display: selectedCategory === item.name ? 'block' : 'none'
+                    }"
+                  >
+                    <li
+                      class="nav-item"
+                      *ngFor="let subCategory of item.sub_categories"
+                    >
+                      <a href="#" class="nav-link d-flex align-items-center">
+                        <p>{{ subCategory.name }}</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+</div>
+            <div class="customer-review mt-3">
+              <h6>Customer Review</h6>
+              <div class="customer-content">
+                <div class="rating-section d-flex">
+                  <div class="rating">
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="rating-section d-flex">
+                  <div class="rating">
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="rating-section d-flex">
+                  <div class="rating">
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="rating-section d-flex">
+                  <div class="rating">
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="rating-section d-flex">
+                  <div class="rating">
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/Icon feather-star.svg"
+                      class="mx-1 star"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price-section mt-3">
+              <h5>Price</h5>
+              <div class="price-content">
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $50 to $100
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $100 to $150
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $150 to $200
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $150 to $200
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $150 to $200
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input d-block"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    $150 to $200
+                  </label>
+                </div>
+                <div class="value-price d-flex mt-3">
+                  <div *ngIf="min_price" class="min price-val mx-1">
+                    {{ min_price }}$
+                  </div>
+                  <div *ngIf="max_price" class="max price-val mx-1">
+                    {{ max_price }}$
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+          <app-feature-products></app-feature-products>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

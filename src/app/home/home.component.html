@@ -1,0 +1,233 @@
+<!-- start section main -->
+<div class="section-main" *ngIf="!isLoading">
+  <div class="container">
+    <carousel>
+      <slide *ngFor="let item of sliders">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="first-section d-md-block">
+              <div class="content pb-3" *ngIf="sliders">
+                <div class="header">
+                  <h1 class="title" *ngIf="item.title">{{item.title}}</h1>
+                  <div class="type py-3">
+                    <span>{{item.category}} </span>
+                    <!-- <span> shoes </span> -->
+                  </div>
+                  <p class="description"*ngIf="item.description">
+             {{item.description}}
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi sed ullam dicta magnam eaque in possimus esse. Molestiae temporibus animi cumque laboriosam tenetur saepe veritatis fuga incidunt impedit nulla!
+                  </p>
+                  <p class="type-price d-flex">
+                    <!-- <span class="span-new">$49.95</span>
+                    <span class="span-old"><s>$60.5</s></span> -->
+                  </p>
+                </div>
+                <div class="button d-flex">
+                  <button class="buy-now mx-2">
+                    <a class="link-footer"target="_blank" [href]="item.button_url">{{item.button_text}} </a>
+                  </button>
+                  <button class="view-details d-none">See Details</button>
+                </div>
+              </div>
+              <div class="content pb-3" *ngIf="!sliders">
+                <div class="header">
+                  <h1 class="title" *ngIf="item.title">{{item.title}}</h1>
+                  <div class="type py-3">
+                    <span>{{item.category}} </span>
+                  </div>
+                  <p class="description"*ngIf="item.description">
+
+                    <ngx-skeleton-loader count="8" [theme]="{height: '30px', background: '#ececec'}" />
+                  </p>
+                  <p class="type-price d-flex">
+
+                  </p>
+                </div>
+                <div class="button d-flex">
+                  <button class="buy-now mx-2">
+                    <ngx-skeleton-loader count="1" [theme]="{height: '30px', background: '#ececec'}" />
+
+                  </button>
+                  <button class="view-details d-none">See Details</button>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-box" *ngIf="item.image">
+              <img loading="lazy"
+                [src]="item.image"
+                alt="slide"
+                style="display: block; width: 100%"
+              />
+
+            </div>
+            <div class="" *ngIf="!item.image">
+                <ngx-skeleton-loader [theme]="{height: '380px', background: '#ececec'}" />
+
+            </div>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+<div class="section-main" *ngIf="isLoading">
+  <div class="container">
+ <div class="row">
+  <div class="col-md-6 mt-5">
+    <ngx-skeleton-loader
+              count="4"
+              [theme]="{
+                'height.px': 20,
+                background: '#ececec'
+              }"
+            />
+  </div>
+  <div class="col-md-6">
+    <ngx-skeleton-loader
+    [theme]="{
+      'height.px': 350,
+      'background':'#ececec'
+    }"
+    />
+  </div>
+ </div>
+
+  </div>
+</div>
+<!-- <section class="section-main">
+  <div class="container">
+    <div class="row">
+      <div class="custom-col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="content">
+          <div class="header">
+            <h1 class="title">Buy Your Comfort</h1>
+            <div class="type py-3">
+              <span>Nike </span>
+              <span> shoes </span>
+            </div>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              adipisci. Beatae ea maxime perspiciatis aspernatur exercitationem
+              eaque qui rem ratione harum voluptatum iure numquam quia quasi
+              odit est, atque ex.
+            </p>
+            <p class="type-price d-flex">
+              <span class="span-new">$49.95</span>
+              <span class="span-old"><s>$60.5</s></span>
+            </p>
+          </div>
+          <div class="button d-flex">
+            <button class="buy-now mx-2">
+              <a>Buy Now </a>
+            </button>
+            <button class="view-details">See Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="img-left">
+          <img src="../../../assets/cc.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- end section main  -->
+
+<app-section-products [product]="productsData"></app-section-products>
+<app-smart></app-smart>
+
+<!-- start section smart -->
+<!-- <div class="smart-main">
+  <section class="section-smart container">
+    <div class="smart-content">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2 class="title-smart">Smart Gadgets</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="center-smart">
+            <p>
+              Lorem ipsum dolor,Lorem ipsum dolor, sit amet conisi
+              exercitationem officia. sit amet conisi exercitationem officia.
+            </p>
+            <div class="box-btn">
+              <button class="btn smart-btn">$690</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img src="/assets/clock.svg" class="clock-img" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div> -->
+
+<!-- end section smart  -->
+<!-- start section category -->
+<section class="category"*ngIf="!isLoading" >
+  <div class="container">
+    <div class="sub-section">
+      <h3 class="header-section">Category</h3>
+      <button class="btn btn-section cate-view">View All</button>
+    </div>
+    <div class="boxes-category">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" *ngFor="let item of categories">
+          <div class="box"  >
+
+            <img [src]="item.image" alt=""  />
+            <h4 class="title-cate">{{item.name}}</h4>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- <div class="box">
+        <img src="/assets/book.svg" alt="" />
+        <h4>Books</h4>
+      </div>
+      <div class="box">
+        <img src="/assets/aceccsis.svg" alt="" />
+        <h4>Accessories</h4>
+      </div>
+      <div class="box">
+        <img src="../../../assets/shose.svg" alt="" />
+        <h4>Shoes</h4>
+      </div> -->
+    </div>
+  </div>
+</section>
+<section class="category"*ngIf="isLoading" >
+  <div class="container">
+    <div class="sub-section">
+      <h3 class="header-section">Category</h3>
+      <button class="btn btn-section cate-view">View All</button>
+    </div>
+    <div class="boxes-category">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" *ngFor="let item of categories">
+          <ngx-skeleton-loader
+
+          [theme]="{
+            'height.px': 110,
+            'width.px':400,
+            'background':'#ececec'
+          }"
+         />
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end section category -->
+<app-arrivals-section></app-arrivals-section>

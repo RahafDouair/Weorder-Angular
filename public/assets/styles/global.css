@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Phenomena-Bold";
+  src: local("Phenomena-Bold"),
+    url(..//fonts/Phenomena/Phenomena-Bold.otf) format("opentype");
+}
+ 
+@font-face {
+  font-family: "Phenomena-ExtraBold";
+  src: local("Phenomena-ExtraBold"),
+    url(..//fonts/Phenomena/Phenomena-ExtraBold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(..//fonts/lato/Lato-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("Lato-Bold"),
+    url(..//fonts/lato/Lato-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: local("Lato-Regular"),
+    url(..//fonts/lato/Lato-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: local("Lato-Light"),
+    url(..//fonts/lato/Lato-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+    url(..//fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "frutiger-Bold";
+  src: local("frutiger-Bold"),
+    url(..//fonts/frutiger/FrutigerLTArabic65Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "frutiger-Roman";
+  src: local("frutiger-Roman"),
+    url(..//fonts/frutiger/FrutigerLTArabic55Roman.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Helvetica-Neue-Regular";
+  src: local("Helvetica-Neue-Regular"),
+    url(..//fonts/Helvetica-Neue/helveticaneue.ttf) format("truetype");
+} 

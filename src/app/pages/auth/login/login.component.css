@@ -1,0 +1,22 @@
+.section-login{
+  /* padding:100px 0 0; */
+  /* background: linear-gradient(to right, #F5F5F5 50%, #592D83 50%); */
+  min-height: 100vh;
+  /* background: linear-gradient(to right, var(--background-color) 70%, var(--background-color-detalis) 30%, var(--background-color-detalis) 30%); */
+
+}
+.img-login{
+  background-color: var(--bg-primary-purple-color);
+}
+.row{
+    background: linear-gradient(to right, #F5F5F5 50%, #592D83 50%) !important;
+
+}
+.img-login img{
+  width: 1000px;
+}
+.custom-col{
+  display: flex;
+  padding-top: 40px !important;
+  justify-content: flex-start;
+}
